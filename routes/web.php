@@ -18,3 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('/ussd/receiver', [InterfaceController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

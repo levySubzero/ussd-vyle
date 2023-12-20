@@ -34,7 +34,7 @@ trait HelperFunctions{
         if ($user->pin == $details ) {
             return "Success";           
         } else {
-            return $this->ussd_stop("Login was unsuccessful!");
+            return $this->ussd_stop("Wrong PIN!");
         }
     }
 }
