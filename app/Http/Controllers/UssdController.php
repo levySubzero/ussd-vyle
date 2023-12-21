@@ -73,7 +73,7 @@ class UssdController extends Controller
                         }
                     } else {
                         // Function to handle new users
-                        $this->newUserMenu();
+                        $this->ussd_stop("Register to access this section!");
                     }
 				}
 			break;
