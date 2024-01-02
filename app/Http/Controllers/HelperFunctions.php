@@ -5,6 +5,17 @@ use App\User;
 
 trait HelperFunctions{
 
+    public function updateSession($ussdSession, $menu)
+    {
+        $ussdSession->current_menu = $menu;
+        $ussdSession->save();
+    }
+
+    public function getWalletBalance($phone)
+    {
+        return 345;
+    }
+
     /**
      * Handles USSD Registration Request
     */
